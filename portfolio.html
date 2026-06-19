@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ผลงาน | NALAW</title>
+
+<meta name="description"
+content="รวมผลงานการผลิตเสื้อและงานสกรีนของ NALAW">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<div class="lightbox" id="lightbox">
+
+<span class="close-lightbox"
+onclick="closeLightbox()">
+
+✕
+
+</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<script>
+
+function openLightbox(image){
+
+document
+.getElementById("lightbox")
+.style.display="flex";
+
+document
+.getElementById("lightbox-img")
+.src=image;
+
+}
+
+function closeLightbox(){
+
+document
+.getElementById("lightbox")
+.style.display="none";
+
+}
+
+</script>
+
+<body>
+
+<header>
+
+<div class="logo">NALAW</div>
+
+<nav>
+<a href="index.html">หน้าแรก</a>
+<a href="services.html">บริการ</a>
+<a href="portfolio.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+</nav>
+
+</header>
+
+<section class="portfolio-page">
+
+<h1>ผลงานล่าสุด</h1>
+
+<div class="portfolio-grid">
+
+<img src="images/work1.jpg" alt="ผลงานผลิตเสื้อ NALAW" onclick="openLightbox(this.src)">
+
+<img src="images/work2.jpg" alt="ผลงานผลิตกางเกง Custom NALAW" onclick="openLightbox(this.src)">
+
+<img src="images/work3.jpg" alt="ผลงานผลิตกางเกง Custom NALAW" onclick="openLightbox(this.src)">
+
+<img src="images/work4.jpg" alt="ขั้นตอนงานระหว่างผลิต NALAW" onclick="openLightbox(this.src)">
+
+<img src="images/work5.jpg" alt="ขั้นตอนงานระหว่างผลิต NALAW" onclick="openLightbox(this.src)">
+
+<img src="images/work6.jpg" alt="ผลงานเสื้อ NALAW" onclick="openLightbox(this.src)">
+</div>
+
+</section>
+
+</body>
+
+</html>
